@@ -1,0 +1,417 @@
+.contact {
+    background-color: black;
+    color: aliceblue;
+    /* text-align: center; */
+    padding: 4rem 0;
+    /* display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container {
+    margin: 0 5rem;
+    padding: 4rem 0;
+    display: flex;
+}
+
+.contact-left-side {
+    width: 50%;
+    height: auto;
+}
+
+.contact-left-side form {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 3rem;
+    background-color: #0f0715;
+}
+
+.contact-left-side h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    background: var(--heading-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left-side p {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    color: #FFFFFF;
+    padding: 1rem 0 2rem 0;
+}
+
+.contact-input-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    justify-content: space-evenly;
+}
+
+.input-field {
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.874);
+    color: white;
+}
+
+.contact-input-section select {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.874);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-input-section select option {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+.contact-input-section textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.874);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-contact {
+    position: relative;
+    margin-top: 6rem;
+}
+
+.contact-btn {
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(19, 13, 66);
+    background: linear-gradient(270deg, rgb(91, 13, 201) 0%, rgba(180, 164, 203, 0) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.contact-btn:hover {
+    background: rgb(19, 13, 66);
+    background: linear-gradient(90deg, rgba(91, 13, 201, 1) 0%, rgba(180, 164, 203, 0) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.contact-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7rem;
+}
+
+.details-right-side {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.icon-box {
+    margin: 1em;
+    border-radius: 25px;
+    padding: 0.8rem;
+    font-size: 25px;
+    display: flex;
+    background: rgb(19, 13, 66);
+    background: linear-gradient(0deg, rgb(91, 13, 201) 0%, rgba(180, 164, 203, 0) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.icon-box:hover {
+    background: rgb(19, 13, 66);
+    background: linear-gradient(170deg, rgb(91, 13, 201) 0%, rgba(180, 164, 203, 0) 100%, rgba(0, 212, 255, 1) 0%);
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.text-box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.text-box h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    padding: 0.4rem 0;
+    letter-spacing: 1px;
+}
+
+.text-box h3:hover {
+    color: rgb(91, 13, 201);
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 4rem 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2.5rem;
+    }
+
+    .contact-left-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-left-side form {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact-left-side h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contact-left-side p {
+        font-size: 16px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .contact-input-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section select {
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section textarea {
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn-contact {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+    }
+
+    .contact-right-side {
+        padding: 0;
+        padding-top: 4rem;
+    }
+
+    .icon-box {
+        font-size: 20px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+    }
+
+    .text-box h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+
+    .contact-left-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-left-side form {
+        padding: 3rem 2rem;
+    }
+
+    .contact-left-side h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .contact-left-side p {
+        font-size: 18px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .contact-input-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px;
+    }
+
+    .input-field {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section select {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section textarea {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .btn-contact {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 18px;
+    }
+
+    .contact-right-side {
+        padding: 0;
+        padding-top: 4rem;
+        margin: 0 auto;
+    }
+
+    .icon-box {
+        font-size: 22px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .text-box h3 {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 901px) and (max-width: 1260px) {
+    .container {
+        display: flex;
+        margin: 0 3rem;
+    }
+
+    .contact-left-side {
+        width: 50%;
+        height: auto;
+    }
+
+    .contact-left-side form {
+        padding: 3rem 2rem;
+    }
+
+    .contact-left-side h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .contact-left-side p {
+        font-size: 18px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .contact-input-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px;
+    }
+
+    .input-field {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section select {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-input-section textarea {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn-contact {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 18px;
+    }
+
+    .contact-right-side {
+        padding: 0;
+        padding-top: 4rem;
+        margin: 0 auto;
+    }
+
+    .icon-box {
+        font-size: 22px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .text-box h3 {
+        font-size: 22px;
+    }
+
+}

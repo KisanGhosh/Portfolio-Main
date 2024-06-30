@@ -1,0 +1,296 @@
+ /* Navbar */
+
+ .navbar{
+    /* position:fixed; */
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    padding: 0 5rem;
+ }
+ .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    height: 4.5rem;
+    margin: 1rem;
+ }
+ .navbar .logo-section{
+    display: flex;
+ }
+.navbar .logo-section .logo{
+    margin: 1rem ;
+    padding: 0.5rem 0.6rem;
+    transition: 0.4s;
+}
+
+.nav-toggle,.nav-close{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 11rem;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+.nav-item{
+list-style: none;
+display: flex;
+}
+
+.nav-link{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    font-family:'Gill Sans', Calibri, sans-serif;
+    transition: color 0.4s;
+}
+.nav-close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.show-menu{
+    right: 0;
+}
+
+.navbar .logo-section p{
+    margin: 0rem 0.5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+
+}
+.btn-navbar {
+    position: relative;
+    margin-right:0rem ;
+    padding:1rem ;
+}
+
+.btn-navbar .navbar-btn{
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(89, 24, 175);
+    background: linear-gradient(270deg, rgb(91, 13, 201) 0%, rgba(180,164,203,0) 100%, rgba(0,212,255,1) 100%); 
+}
+
+
+.btn-navbar .navbar-btn:hover{
+    background: rgb(19,13,66);
+    background: linear-gradient(90deg, rgba(91,13,201,1) 0%, rgba(180,164,203,0) 100%, rgba(0,212,255,1) 100%); 
+}
+
+/* @media screen and(max-width:1150px) {
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(0, 0%, 6%, 0.2);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }
+}
+@media screen and (min-width:1150px) {
+    .nav{
+        height: 100%;
+    }
+    .nav-close,
+    .nav-toggle{
+        display: none;
+    }
+
+    .nav-list{
+        flex-direction: row;
+        column-gap: 2.5rem;
+    }
+} */
+
+
+
+
+
+/* card */
+
+.card{
+    background-color:#0f0715;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:start; */
+    align-items:flex-start;
+    padding: 1.7rem 2rem;
+    margin: 2.5rem 4rem;
+    border-radius: 2rem;
+    width: 580px;
+    
+}
+.card .year{
+    /* text-align: left; */
+    color:rgb(168, 81, 254);
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.card .title{
+    font-size: 34px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+}
+
+.card .description{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.card:hover{
+    background: rgb(97, 6, 243);
+    background: linear-gradient(90deg, rgb(104, 26, 228) 0%, rgb(40, 40, 42) 100%, rgb(89, 74, 120) 100%); 
+   
+    .year{
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 480px) {
+    .card{
+    padding: 1.5rem ;
+    margin: 2.5rem auto;
+    width: 380px;
+    align-items: center;
+}
+.card .year{
+    font-size: 20px;
+}
+
+.card .title{
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card .description{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+}
+@media (min-width: 481px) and (max-width: 900px) {
+        .card{
+    padding: 1.5rem ;
+    margin: 2.5rem auto;
+    width: 450px;
+    align-items: center;
+}
+.card .year{
+    font-size: 22px;
+}
+
+.card .title{
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card .description{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+}
+
+
+
+
+
+
+/* SkillCard */
+
+
+.skillCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.card-details{
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 20px;
+    background-color: rgb(71, 31, 108);
+    padding: 1.5rem;
+}
+
+.card-details:hover{
+    border: 1px solid rgb(184, 121, 243);
+    background-color: rgba(105, 7, 197, 0.619);
+    transition: 1s;
+    color:rgb(165, 71, 254); 
+
+    img{
+        filter: grayscale(0%);
+    }
+    h2{
+        color:rgb(172, 142, 255) ;
+    }
+}
+
+.card-details img{
+    width: 50%;
+    height: 50%;
+    filter: grayscale(100%);
+}
+
+.card-details h2{
+    font-size: 25px;
+    color: rgb(124, 122, 122);
+    text-align: center;
+    padding-top: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skillCard .name{
+    padding-top: 1rem;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    color: rgb(168, 122, 255);
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+
+}
+@media (min-width: 481px) and (max-width: 900px) {}
+@media (min-width: 901px) and (max-width: 1260px) {}

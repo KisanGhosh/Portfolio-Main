@@ -1,0 +1,90 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 5rem 0;
+    background-color: #0f0715;
+}
+
+.skills h1{
+    text-align: center;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    padding: 2rem 0 1rem 0;
+    /* background: linear-gradient(90deg, #D702CE 0%, #D702CE 8%, #DA1CD2 17.99%, #F0EDED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;   */
+     background: var(--heading-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills p{
+    font-size: 22px;
+    color: white;
+    padding: 0 0 4rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .skills h1{
+    font-size: 40px;
+}
+
+.skills p{
+     width: 80%;
+        margin: 0 auto;
+        font-size: 16px;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+}
+@media (min-width: 481px) and (max-width: 900px) {
+        .skills h1{
+    font-size: 45px;
+}
+
+.skills p{
+     width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+}
+@media (min-width: 901px) and (max-width: 1260px) {
+            .skills h1{
+    font-size: 50px;
+}
+
+.skills p{
+     width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+}
